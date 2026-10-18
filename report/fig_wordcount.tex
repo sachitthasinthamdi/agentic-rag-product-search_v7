@@ -1,0 +1,67 @@
+% =============================================================
+% ลำดับการทำงานของสัญญาณนับคำซ้อน
+% =============================================================
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+  bx/.style  = {draw=black!55, rounded corners=2pt, minimum width=3.3cm,
+                minimum height=0.8cm, align=center, inner sep=2pt, font=\scriptsize},
+  inp/.style = {bx, fill=black!6},
+  op/.style  = {bx},
+  mrg/.style = {bx, fill=black!20, very thick, draw=black, minimum width=4.4cm},
+  fin/.style = {bx, fill=black!68, text=white, minimum width=4.4cm},
+  note/.style= {draw=black!40, dashed, rounded corners=2pt, align=left,
+                inner sep=5pt, font=\scriptsize, text width=4.4cm, fill=white},
+  ar/.style  = {-{Stealth[length=4pt]}, thick, black!65}
+]
+
+\def\lx{-2.3} \def\rx{2.3}
+
+% ---------- ข้อมูลเข้า ----------
+\node[inp] (q0) at (\lx, 0)      {คำค้น\\(หลังผ่านขั้นแปลภาษา)};
+\node[inp] (t0) at (\rx, 0)      {ชื่อสินค้าที่ค้นได้};
+
+% ---------- ตัดเป็นคำ ----------
+\node[op]  (q1) at (\lx,-1.35)   {ตัดเป็นคำ\\เฉพาะ a--z และ 0--9};
+\node[op]  (t1) at (\rx,-1.35)   {ตัดเป็นคำ\\เฉพาะ a--z และ 0--9};
+
+% ---------- ทิ้งคำ ----------
+\node[op]  (q2) at (\lx,-2.75)   {ทิ้งคำที่ไม่ช่วยแยก};
+\node[op]  (t2) at (\rx,-2.75)   {ทิ้งคำที่ไม่ช่วยแยก};
+
+% ---------- เซต ----------
+\node[op]  (q3) at (\lx,-4.1)    {เซตคำของคำค้น\\$Q$};
+\node[op]  (t3) at (\rx,-4.1)    {เซตคำของชื่อสินค้า\\$T$};
+
+% ---------- รวม ----------
+\node[mrg] (m)  at (0,-5.5)      {หาคำที่อยู่ทั้งสองฝั่ง\\$|Q \cap T|$};
+\node[fin] (f)  at (0,-6.9)      {คะแนน $= \dfrac{|Q \cap T|}{|Q|}$ \; มีค่า 0 ถึง 1};
+
+\foreach \i/\j in {q0/q1, q1/q2, q2/q3, t0/t1, t1/t2, t2/t3} \draw[ar] (\i) -- (\j);
+\draw[ar] (q3) |- (m.west);
+\draw[ar] (t3) |- (m.east);
+\draw[ar] (m)  -- (f);
+
+% ---------- กฎที่ใช้ทิ้งคำ ----------
+\node[note] (n) at (7.2,-2.75)
+  {\textbf{กฎทิ้งคำ 2 ข้อ}\\[2pt]
+   1. อยู่ในรายการคำที่ไม่ช่วยแยก 13 คำ\\
+   \hspace*{0.9em}คำไวยากรณ์ และคำที่พบบ่อย\\
+   \hspace*{0.9em}ในชื่อสินค้าจนไม่บอกความตรง\\[3pt]
+   2. สั้นกว่า 3 ตัวอักษร\\
+   \hspace*{0.9em}เพราะตรงกันโดยบังเอิญได้ง่าย};
+\draw[ar, dashed, black!45] (n.west) -- (t2.east);
+
+% ---------- หมายเหตุตัวหาร ----------
+\node[note, text width=4.4cm] (d) at (7.2,-6.4)
+  {\textbf{ตัวหารคือ $|Q|$}\\[2pt]
+   นับจากจำนวนคำของ\textbf{คำค้น}\\
+   ไม่ใช่ของชื่อสินค้า\\
+   สินค้าที่ชื่อยาวจึงไม่ได้เปรียบ};
+\draw[ar, dashed, black!45] (d.west) -- (f.east);
+
+\end{tikzpicture}
+\caption{ลำดับการทำงานของสัญญาณนับคำซ้อน}
+\label{fig:wordcount}
+\end{figure}

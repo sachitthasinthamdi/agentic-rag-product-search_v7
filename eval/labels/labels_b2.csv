@@ -1,0 +1,16 @@
+﻿ans_id,qid,query,n_products,label,kind,note
+b01,q02,squeaky balls for large dogs,3,0,intrinsic,ชิ้น 2 เขียนว่า doesn't mention being squeaky แต่ชื่อสินค้าคือ Large Dog Squeaky Plush Toys | ผู้วิจัยตรวจซ้ำ 2026-10-13 ยืนยัน 0 ตรงกัน
+b02,q06,led light strip,3,1,extrinsic,ชิ้น 3 เติม adjustable brightness ซึ่งข้อมูลไม่ได้บอก
+b03,q07,scat mats for dogs,3,0,intrinsic,ชิ้น 1-2 เขียนว่า matches the user's request ทั้งที่เป็น licking mat ไม่ใช่ scat mat
+b04,q08,toilet paper stand,3,0,intrinsic,ชิ้น 1 เขียนว่า does not have storage space แต่ชื่อสินค้าคือ Storage Holder · ชิ้น 2-3 อ้างเงื่อนไขสีที่ผู้ใช้ไม่ได้ขอ
+b05,q10,chair pillow cushion,3,0,intrinsic,ชิ้น 2 เป็น Chiavari Chair Pad Seat Cushion แต่เขียนว่า does not match a chair pillow cushion | ผู้วิจัยตรวจซ้ำ 2026-10-13 ยืนยัน 0 ตรงกัน
+b06,q18,pool floats,3,0,intrinsic,ชิ้น 2 เขียนว่า doesn't mention being shaped like a pool float แต่ชื่อสินค้าคือ Pool Floats · ชิ้น 3 อ้างธีมโจรสลัดที่ผู้ใช้ไม่ได้ขอ | ผู้วิจัยตรวจซ้ำ 2026-10-13 ยืนยัน 0 ตรงกัน
+b07,q19,accent leather chair,3,1,extrinsic,ชิ้น 2 เติมคำว่า armless ซึ่งข้อมูลไม่ได้บอก (furry พอรับได้จาก Lamb Fleece Sherpa)
+b08,q26,lumi baby monitor with camera and audio,3,0,intrinsic,ชิ้น 1 เขียนว่า does not have a camera แต่ชื่อคือ Video Baby Monitor Sleep Camera · ชิ้น 3 เขียนว่าไม่มีฟังก์ชัน baby monitor แต่ชื่อคือ Pet Camera for Baby Monitor | ผู้วิจัยตรวจซ้ำ 2026-10-13 ยืนยัน 0 ตรงกัน
+b09,q29,dji new drone,3,2,,ทั้ง 3 ชิ้นตรงกับข้อมูล · longer flight time พอรับได้จาก 30 Mins Flight Time ที่ให้มา
+b10,q34,orange track pants men,3,1,extrinsic,เขียนว่า do not have an orange color ทั้งที่ข้อมูลไม่ได้ระบุสีเลย เป็นการสรุปจากความเงียบ
+b11,q35,decorative hour glass gold,3,2,,บรรยายตรงตามชื่อทั้ง 3 ชิ้น และบอกตรง ๆ ว่าไม่ตรงกับนาฬิกาทราย
+b12,q36,iron beads ideas design,3,0,intrinsic,ชิ้น 1 เป็นกำไลสำเร็จรูป แต่เขียนว่า matches the user's request for iron beads
+b13,q39,aline skirt,3,0,intrinsic,ชิ้น 2-3 ชื่อสินค้าระบุ A-Line ชัดเจน แต่เขียนว่า does not match the user's request for an A-line skirt | ผู้วิจัยตรวจซ้ำ 2026-10-13 ยืนยัน 0 ตรงกัน
+b14,q48,netflix tv show stickers,3,1,extrinsic,ชิ้น 1 เติม from The Addams Family ซึ่งข้อมูลไม่ได้บอก
+b15,q49,play station3,3,2,,ทั้ง 3 ชิ้นบอกตรง ๆ ว่าไม่ใช่ PS3 และไม่เติมข้อมูลเกิน

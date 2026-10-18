@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>สาธิตระบบแนะนำสินค้า</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;600;700&family=Sarabun:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f7f6f2; --ink:#15293d; --muted:#6b7785; --line:#d8d6ce;
+    --card:#ffffff; --accent:#2f6f8f; --warm:#c2683a; --soft:#eceae2;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#131a21; --ink:#e8edf2; --muted:#9aa7b4; --line:#2b3741;
+      --card:#1b242d; --accent:#7fb3cc; --warm:#e0956b; --soft:#222d37;
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font-family:'Sarabun',system-ui,sans-serif;line-height:1.5}
+  .wrap{max-width:1040px;margin:0 auto;padding:28px 16px 64px}
+  h1{font-family:'IBM Plex Sans Thai',sans-serif;font-size:27px;margin:0 0 4px}
+  .sub{color:var(--muted);font-size:15px;margin:0 0 22px}
+
+  .panel{background:var(--card);border:1px solid var(--line);
+         border-radius:14px;padding:18px;margin-bottom:18px}
+  .lbl{font-size:13px;color:var(--muted);margin-bottom:8px;letter-spacing:.3px}
+
+  .arms{display:flex;gap:10px;flex-wrap:wrap}
+  .arm{flex:1;min-width:210px;border:1.5px solid var(--line);border-radius:11px;
+       padding:11px 13px;cursor:pointer;background:transparent;text-align:left;
+       color:var(--ink);font-family:inherit;transition:.12s}
+  .arm:hover{border-color:var(--accent)}
+  .arm.on{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,transparent)}
+  .arm b{display:block;font-family:'IBM Plex Sans Thai',sans-serif;font-size:17px}
+  .arm span{font-size:12.5px;color:var(--muted);display:block;margin-top:2px}
+
+  .cmp{display:flex;align-items:center;gap:8px;margin-top:13px;
+       font-size:14px;color:var(--muted);cursor:pointer;user-select:none}
+
+  .row{display:flex;gap:10px;margin-top:14px}
+  input[type=text]{flex:1;padding:12px 14px;border:1.5px solid var(--line);
+       border-radius:10px;background:var(--bg);color:var(--ink);
+       font-family:inherit;font-size:16px}
+  input[type=text]:focus{outline:none;border-color:var(--accent)}
+  button.go{padding:12px 24px;border:0;border-radius:10px;background:var(--accent);
+       color:#fff;font-family:inherit;font-size:16px;font-weight:600;cursor:pointer}
+  button.go:disabled{opacity:.5;cursor:default}
+  button.ghost{padding:12px 16px;border:1.5px solid var(--line);border-radius:10px;
+       background:transparent;color:var(--muted);font-family:inherit;font-size:14px;cursor:pointer}
+
+  .hint{margin-top:11px;font-size:13px;color:var(--muted)}
+  .hint b{color:var(--ink);font-weight:600}
+  .chip{display:inline-block;border:1px solid var(--line);border-radius:999px;
+        padding:3px 11px;margin:4px 5px 0 0;font-size:12.5px;cursor:pointer;color:var(--muted)}
+  .chip:hover{border-color:var(--accent);color:var(--ink)}
+
+  .grid{display:grid;gap:14px}
+  .res{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .res header{padding:12px 16px;background:var(--soft);
+       display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .res header b{font-family:'IBM Plex Sans Thai',sans-serif;font-size:18px}
+  .res header em{font-style:normal;font-size:12.5px;color:var(--muted)}
+  .res .body{padding:14px 16px}
+  .reply{white-space:pre-wrap;font-size:15px}
+  .err{color:var(--warm);font-size:14.5px}
+
+  .prod{border-top:1px dashed var(--line);padding:9px 0;font-size:14px}
+  .prod .t{font-weight:600}
+  .prod .m{color:var(--muted);font-size:13px;margin-top:2px}
+
+  .trace{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;
+         border-top:1px solid var(--line);padding-top:11px}
+  .tg{border:1px solid var(--line);border-radius:7px;padding:4px 9px;font-size:12.5px}
+  .tg i{font-style:normal;color:var(--muted)}
+  .tg b{font-weight:600}
+  .loop{border-color:var(--warm);color:var(--warm)}
+
+  .spin{display:inline-block;width:13px;height:13px;border:2px solid var(--line);
+        border-top-color:var(--accent);border-radius:50%;animation:s .8s linear infinite;
+        vertical-align:-2px;margin-right:6px}
+  @keyframes s{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>สาธิตระบบแนะนำสินค้าเชิงสนทนา</h1>
+  <p class="sub">เลือกสถาปัตยกรรมแล้วถามคำถามเดียวกัน เพื่อดูว่าชั้นที่ตัดสินใจเองสร้างความต่างตรงไหน</p>
+
+  <div class="panel">
+    <div class="lbl">สถาปัตยกรรม</div>
+    <div class="arms" id="arms"></div>
+
+    <label class="cmp">
+      <input type="checkbox" id="cmp">
+      เทียบทั้งสามสถาปัตยกรรมพร้อมกันด้วยคำถามเดียว
+    </label>
+
+    <div class="row">
+      <input type="text" id="q" placeholder="เช่น อยากได้หูฟังไร้สายงบไม่เกิน 30 ดอลลาร์" autocomplete="off">
+      <button class="go" id="go">ถาม</button>
+      <button class="ghost" id="rs" title="ล้างความจำของทุกสถาปัตยกรรม">ล้างความจำ</button>
+    </div>
+
+    <div class="hint">
+      ลองคำที่<b>คลังมีของ</b>
+      <span class="chip">usb flash drive 2 tb</span>
+      <span class="chip">เบาะรองนั่งเก้าอี้</span>
+      แล้วลองคำที่<b>คลังไม่มีของ</b>
+      <span class="chip">loui vuitton</span>
+      <span class="chip">กล่องสุ่มโปเกมอน</span>
+      เพื่อดูว่าลูปค้นซ้ำทำงานเฉพาะกรณีหลัง
+    </div>
+  </div>
+
+  <div class="grid" id="out"></div>
+</div>
+
+<script>
+const ARMS = [
+  ["A1",  "RAG มาตรฐาน",  "ไม่มีชั้นตัดสินใจ ค้นรอบเดียว"],
+  ["A3C", "Agentic RAG",  "เอเจนต์เลือกการกระทำ กฎคุมการค้นซ้ำ"],
+  ["A3",  "Agentic RAG",  "เอเจนต์เลือกการกระทำและคุมการค้นซ้ำเอง"],
+];
+let picked = "A1";
+
+const $ = s => document.querySelector(s);
+const armsBox = $("#arms"), out = $("#out"), q = $("#q"), go = $("#go"), cmp = $("#cmp");
+
+function drawArms(){
+  armsBox.innerHTML = "";
+  for(const [id, name, desc] of ARMS){
+    const b = document.createElement("button");
+    b.className = "arm" + (id === picked && !cmp.checked ? " on" : "");
+    b.innerHTML = `<b>${id} · ${name}</b><span>${desc}</span>`;
+    b.onclick = () => { picked = id; cmp.checked = false; drawArms(); };
+    armsBox.appendChild(b);
+  }
+  armsBox.style.opacity = cmp.checked ? .45 : 1;
+}
+
+function money(v){ return v == null ? "" : "$" + Number(v).toFixed(2); }
+
+function card(r){
+  const el = document.createElement("div");
+  el.className = "res";
+  if(r.error){
+    el.innerHTML = `<header><b>${r.arm}</b><em>${r.seconds} วินาที</em></header>
+      <div class="body"><div class="err">เกิดข้อผิดพลาด — ${r.error}</div></div>`;
+    return el;
+  }
+  const t = r.trace || {};
+  const loop = (t.n_searches || 0) > 1;
+  const prods = (r.products || []).map(p => `
+    <div class="prod">
+      <div class="t">${p.title}</div>
+      <div class="m">${money(p.price)} · ${p.rating ?? "—"} ดาว จาก ${p.n_reviews ?? "—"} รีวิว · ${p.store ?? "—"} · ความใกล้ ${p.score ?? "—"}</div>
+    </div>`).join("");
+
+  const tags = [
+    ["เรียกแบบจำลอง", t.llm_calls],
+    ["จำนวนครั้งที่ค้น", t.n_searches],
+    ["ผู้เข้าชิง", t.n_candidates],
+    ["ผ่านเกณฑ์คัด", t.n_passed],
+    ["ภาษา", t.language],
+    ["การกระทำ", t.action],
+  ].filter(([, v]) => v !== undefined && v !== null)
+   .map(([k, v]) => `<span class="tg"><i>${k}</i> <b>${v}</b></span>`).join("");
+
+  el.innerHTML = `
+    <header><b>${r.arm}</b><em>${r.label} · ${r.seconds} วินาที</em></header>
+    <div class="body">
+      <div class="reply">${r.reply ?? ""}</div>
+      ${prods}
+      <div class="trace">
+        ${tags}
+        ${loop ? '<span class="tg loop"><i>ลูปค้นซ้ำ</i> <b>ทำงาน</b></span>' : ''}
+      </div>
+    </div>`;
+  return el;
+}
+
+async function send(){
+  const message = q.value.trim();
+  if(!message) return;
+  const arms = cmp.checked ? ARMS.map(a => a[0]) : [picked];
+
+  go.disabled = true;
+  out.innerHTML = `<div class="panel"><span class="spin"></span>กำลังประมวลผล ${arms.join(" · ")} …
+    <span style="color:var(--muted)">อาจใช้เวลาหลายวินาทีต่อสถาปัตยกรรม</span></div>`;
+
+  try{
+    const res = await fetch("/api/ask", {
+      method:"POST", headers:{"Content-Type":"application/json"},
+      body: JSON.stringify({ arms, message })
+    });
+    const data = await res.json();
+    out.innerHTML = "";
+    if(data.error){ out.innerHTML = `<div class="panel err">${data.error}</div>`; }
+    else { for(const r of data.results) out.appendChild(card(r)); }
+  }catch(e){
+    out.innerHTML = `<div class="panel err">ติดต่อเซิร์ฟเวอร์ไม่ได้ — ${e}</div>`;
+  }finally{
+    go.disabled = false;
+  }
+}
+
+go.onclick = send;
+q.onkeydown = e => { if(e.key === "Enter") send(); };
+cmp.onchange = drawArms;
+$("#rs").onclick = async () => {
+  await fetch("/api/reset", {method:"POST", headers:{"Content-Type":"application/json"}, body:"{}"});
+  out.innerHTML = `<div class="panel" style="color:var(--muted)">ล้างความจำของทุกสถาปัตยกรรมแล้ว</div>`;
+};
+document.addEventListener("click", e => {
+  if(e.target.classList.contains("chip")){ q.value = e.target.textContent.trim(); q.focus(); }
+});
+
+drawArms();
+</script>
+</body>
+</html>

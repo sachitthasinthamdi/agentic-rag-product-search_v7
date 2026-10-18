@@ -1,0 +1,27 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+
+# ไฟล์ข้อมูลใหญ่เกินกว่าจะเก็บใน git (สร้างใหม่ได้จากขั้นตอนใน docs/steps.md)
+data/
+
+# docs/details_keys.json เก็บไว้ใน git ได้ (เล็ก และใช้อ้างอิงตอนเลือก feature)
+
+# log จากการรันทดลอง
+*.log
+scratch_*.py
+
+# ไฟล์ชั่วคราวของ LaTeX (เก็บเฉพาะ .tex และ main.pdf)
+report/*.aux
+report/*.fls
+report/*.fdb_latexmk
+report/*.out
+report/*.toc
+report/*.lof
+report/*.lot
+report/*.bbl
+report/*.blg
+report/*.synctex.gz
+report/build.log

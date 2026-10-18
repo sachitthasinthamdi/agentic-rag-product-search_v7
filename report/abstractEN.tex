@@ -1,0 +1,11 @@
+% ABSTRACT (English) — should not exceed 300 words
+% Past tense for objectives and methodology
+% Present tense for results and applications
+
+This project aimed to compare a standard retrieval-augmented generation architecture with an agentic one, in which a language model makes decisions at run time, for a conversational product recommendation system that accepts queries in both Thai and English over an English-only product catalogue.
+
+The work began by preparing a real catalogue of 81{,}264 Amazon products and building a semantic search index with a bilingual embedding model. Three architectures were then developed. All of them share every component and differ only in which layers the language model decides for itself, so that the comparison changes one variable at a time. The entire system runs on a personal computer using an 8-billion-parameter language model, without calling any external service. Evaluation used a purpose-built test collection of 140 queries in both languages, grouped by what the catalogue actually contains, with relevance judgements assigned by hand following a standard four-level scheme.
+
+The results show that the agentic architectures score higher than the standard one in both languages and lose on no query at all. The English score rises from 0.3288 to 0.3564, which is statistically significant, and the Thai score rises from 0.3165 to 0.3267. However, the entire advantage comes from queries for which the catalogue holds no matching product. When the catalogue does hold a match, all three architectures score identically. The study further finds that the ranking layer, not the retrieval or decision layer, is the real bottleneck: it loses 45 to 48 percent of the relevant products, roughly three and a half times more than every other stage combined. Adding a word-overlap signal to that layer yields about twice the gain that the agentic behaviour provides.
+
+These findings give practical guidance for architecture selection, and the test collection with its judgements is released publicly so that others can reproduce the measurements.

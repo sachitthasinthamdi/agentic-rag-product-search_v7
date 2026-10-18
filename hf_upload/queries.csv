@@ -1,0 +1,141 @@
+qid,group,query_en,query_th,band,source,budget_usd,needs_qrels
+q01,in_domain,usb flash drive 2 tb,แฟลชไดรฟ์ usb 2 tb,ง่าย,ESCI,,yes
+q02,in_domain,squeaky balls for large dogs,ลูกบอลมีเสียงสำหรับสุนัขพันธุ์ใหญ่,ง่าย,ESCI,,yes
+q03,in_domain,gowdy height adjustable standing desk,โต๊ะยืนปรับระดับ gowdy,ง่าย,WANDS,,yes
+q04,in_domain,tv stand with storage space,ชั้นวางทีวีมีที่เก็บของ,ง่าย,ESCI,,yes
+q05,in_domain,baby proofing cabinet lock bows,ตัวล็อกตู้กันเด็กเปิด,ง่าย,ESCI,,yes
+q06,in_domain,led light strip,ไฟเส้น led,ง่าย,WANDS,,yes
+q07,in_domain,scat mats for dogs,แผ่นกันสุนัขขึ้น,ง่าย,ESCI,,yes
+q08,in_domain,toilet paper stand,ที่วางกระดาษชำระแบบตั้งพื้น,ง่าย,WANDS,,yes
+q09,in_domain,5 blade electric razors for men,เครื่องโกนหนวดไฟฟ้า 5 ใบมีด สำหรับผู้ชาย,ง่าย,ESCI,,yes
+q10,in_domain,chair pillow cushion,เบาะรองนั่งเก้าอี้,ง่าย,WANDS,,yes
+q11,in_domain,lunch bag,กระเป๋าใส่ข้าวกลางวัน,ง่าย,WANDS,,yes
+q12,in_domain,adidas dad hat,หมวกแก๊ป adidas,ง่าย,ESCI,,yes
+q13,in_domain,iphone 10 xr otterbox case for women,เคส otterbox iphone xr สำหรับผู้หญิง,ง่าย,ESCI,,yes
+q14,in_domain,expo wipes for white board,ผ้าเช็ดกระดานไวท์บอร์ด expo,ง่าย,ESCI,,yes
+q15,in_domain,decorative vinyl window decal,สติกเกอร์ไวนิลติดกระจกแบบตกแต่ง,ง่าย,ESCI,,yes
+q16,in_domain,masquerade mask for women,หน้ากากแฟนซีสำหรับผู้หญิง,ง่าย,ESCI,,yes
+q17,in_domain,gaming chair with footrest and speakers,เก้าอี้เกมมิ่งมีที่วางเท้าและลำโพง,ง่าย,ESCI,,yes
+q18,in_domain,pool floats,แพยางลอยน้ำ,ง่าย,WANDS,,yes
+q19,in_domain,accent leather chair,เก้าอี้หนังแต่งห้อง,กลาง,WANDS,,yes
+q20,in_domain,reflective cat harness,สายรัดอกแมวสะท้อนแสง,กลาง,ESCI,,yes
+q21,in_domain,ps4 controller charger,ที่ชาร์จจอย ps4,กลาง,ESCI,,yes
+q22,in_domain,battery terminals toyota,ขั้วแบตเตอรี่ toyota,กลาง,ESCI,,yes
+q23,in_domain,11 ipad pro case,เคส ipad pro 11 นิ้ว,กลาง,ESCI,,yes
+q24,in_domain,1 1/2 pop up drain without overflow,สะดืออ่าง 1 1/2 นิ้ว แบบไม่มีรูน้ำล้น,กลาง,ESCI,,yes
+q25,in_domain,grounding shoes,รองเท้ากราวด์ดิ้ง,กลาง,ESCI,,yes
+q26,in_domain,lumi baby monitor with camera and audio,กล้องดูแลเด็ก lumi มีภาพและเสียง,กลาง,ESCI,,yes
+q27,in_domain,portable cologne sprayer,ขวดสเปรย์น้ำหอมพกพา,กลาง,ESCI,,yes
+q28,in_domain,# 2 pencils not sharpened,ดินสอ #2 แบบยังไม่เหลา,กลาง,ESCI,,yes
+q29,in_domain,dji new drone,โดรน dji รุ่นใหม่,กลาง,ESCI,,yes
+q30,in_domain,ecloth glass and polishing cloth,ผ้าเช็ดกระจกและขัดเงา ecloth,กลาง,ESCI,,yes
+q31,in_domain,inspirational tags,ป้ายข้อความให้กำลังใจ,กลาง,ESCI,,yes
+q32,in_domain,garmin dash cam mini,กล้องติดรถ garmin mini,กลาง,ESCI,,yes
+q33,in_domain,front porch furniture sets,ชุดเฟอร์นิเจอร์ระเบียงหน้าบ้าน,กลาง,WANDS,,yes
+q34,in_domain,orange track pants men,กางเกงวอร์มสีส้มผู้ชาย,กลาง,ESCI,,yes
+q35,in_domain,decorative hour glass gold,นาฬิกาทรายตกแต่งสีทอง,กลาง,ESCI,,yes
+q36,in_domain,iron beads ideas design,ลูกปัดรีดลายต่าง ๆ,กลาง,ESCI,,yes
+q37,in_domain,bed risers,ขาเสริมยกเตียง,ยาก,WANDS,,yes
+q38,in_domain,circle cabinet pulls,มือจับตู้ทรงกลม,ยาก,WANDS,,yes
+q39,in_domain,aline skirt,กระโปรงทรงเอ,ยาก,ESCI,,yes
+q40,in_domain,gecko repellent,ยาไล่จิ้งจก,ยาก,ESCI,,yes
+q41,in_domain,builder gel in a bottle,เจลต่อเล็บแบบขวด,ยาก,ESCI,,yes
+q42,in_domain,dremel attachments for dog nails,หัวต่อ dremel กรอเล็บสุนัข,ยาก,ESCI,,yes
+q43,in_domain,white rear fiew mirror,กระจกมองหลังสีขาว,ยาก,ESCI,,yes
+q44,in_domain,9 ft baby gate with door,ที่กั้นเด็ก 9 ฟุต มีประตู,ยาก,ESCI,,yes
+q45,in_domain,'moment case' for iphone 7 not the plus,เคส moment สำหรับ iphone 7 ไม่เอารุ่น plus,ยาก,ESCI,,yes
+q46,in_domain,iq fun pack game,เกมฝึกสมองแบบชุด,ยาก,ESCI,,yes
+q47,in_domain,balt desk,โต๊ะ balt,ยาก,ESCI,,yes
+q48,in_domain,netflix tv show stickers,สติกเกอร์ซีรีส์ netflix,ยาก,ESCI,,yes
+q49,in_domain,play station3,เพลย์สเตชัน 3,ยาก,ESCI,,yes
+q50,in_domain,rose pots garden,กระถางปลูกกุหลาบ,ยาก,ESCI,,yes
+n01,out_of_domain,kisner,,,WANDS,,no
+n02,out_of_domain,nanaville,,,ESCI,,no
+n03,out_of_domain,lg v40 thinq,,,ESCI,,no
+n04,out_of_domain,robert whitlow the sacrifice,,,ESCI,,no
+n05,out_of_domain,pokemon blind box,กล่องสุ่มโปเกมอน,,ESCI,,no
+n06,out_of_domain,start without me,,,ESCI,,no
+n07,out_of_domain,is this not the carpenter,,,ESCI,,no
+n08,out_of_domain,chernobyl,,,ESCI,,no
+n09,out_of_domain,eddie noack,,,ESCI,,no
+n10,out_of_domain,warhammer 40k grey knights,,,ESCI,,no
+n11,out_of_domain,tana french the searcher,,,ESCI,,no
+n12,out_of_domain,patrick custome,,,ESCI,,no
+n13,out_of_domain,serta kleinmon,,,WANDS,,no
+n14,out_of_domain,peacock,นกยูง,,WANDS,,no
+n15,out_of_domain,once rejected twice desired blue moon series book 1,,,ESCI,,no
+n16,out_of_domain,sedona guide book,หนังสือนำเที่ยว sedona,,ESCI,,no
+n17,out_of_domain,justin brescia,,,ESCI,,no
+n18,out_of_domain,shandler,,,ESCI,,no
+n19,out_of_domain,americanized rebel without a green card by sara saedi,,,ESCI,,no
+n20,out_of_domain,levi ackerman figure,ฟิกเกอร์ levi ackerman,,ESCI,,no
+n21,out_of_domain,tucker carlson books,หนังสือของ tucker carlson,,ESCI,,no
+n22,out_of_domain,spiderman miles lorales motorcycle,มอเตอร์ไซค์ spiderman miles lorales,,ESCI,,no
+n23,out_of_domain,streptocarpella,,,ESCI,,no
+n24,out_of_domain,mission double vanity,อ่างล้างหน้าคู่แบบ mission,,WANDS,,no
+n25,out_of_domain,lake launger,,,ESCI,,no
+n26,out_of_domain,tamil movies,หนังทมิฬ,,ESCI,,no
+n27,out_of_domain,naveen jain,,,ESCI,,no
+n28,out_of_domain,richard murano,,,ESCI,,no
+n29,out_of_domain,season 1 fargo,fargo ซีซั่น 1,,ESCI,,no
+n30,out_of_domain,pones,,,ESCI,,no
+n31,out_of_domain,ombre rug,พรมไล่เฉดสี,,WANDS,,no
+n32,out_of_domain,the gallows,,,ESCI,,no
+n33,out_of_domain,hnbun,,,ESCI,,no
+n34,out_of_domain,sally green,,,ESCI,,no
+n35,out_of_domain,drudge report,,,WANDS,,no
+n36,out_of_domain,hilary hahn beethoven,,,ESCI,,no
+n37,out_of_domain,patrick rothfuss doors of stone,,,ESCI,,no
+n38,out_of_domain,dostoevsky,,,ESCI,,no
+n39,out_of_domain,the american story david rubenstein,,,ESCI,,no
+n40,out_of_domain,parker s huntington,,,ESCI,,no
+n41,out_of_domain,jade dermarillwr,,,ESCI,,no
+n42,out_of_domain,love after lockup,,,ESCI,,no
+n43,out_of_domain,issues and ethics in the helping professions 10th edition,,,ESCI,,no
+n44,out_of_domain,argenteuil,,,WANDS,,no
+n45,out_of_domain,clue jr,,,ESCI,,no
+n46,out_of_domain,loui vuitton,,,ESCI,,no
+n47,out_of_domain,untamed glennon doyle,,,ESCI,,no
+n48,out_of_domain,ava max christmas without you,,,ESCI,,no
+n49,out_of_domain,"kingslover, barbara",,,ESCI,,no
+n50,out_of_domain,minnestrista,,,WANDS,,no
+n51,out_of_domain,d.a. young kindle books,หนังสือ kindle ของ d.a. young,,ESCI,,no
+n52,out_of_domain,monistat 3 day treatment,,,ESCI,,no
+n53,out_of_domain,the hunchback of notre dame vhs,วีเอชเอส คนค่อมแห่งนอเทรอดาม,,ESCI,,no
+n54,out_of_domain,foods that built america,,,ESCI,,no
+n55,out_of_domain,karma sutra books positions,หนังสือกามสูตร ท่าต่าง ๆ,,ESCI,,no
+n56,out_of_domain,terry slippers,รองเท้าใส่ในบ้านผ้าขนหนู,,ESCI,,no
+n57,out_of_domain,rudin,,,ESCI,,no
+n58,out_of_domain,gepoetry,,,ESCI,,no
+n59,out_of_domain,48 laws of power,หนังสือ 48 กฎแห่งอำนาจ,,ESCI,,no
+n60,out_of_domain,steve chappell,,,ESCI,,no
+b01,budget,scat mats for dogs under $11,แผ่นกันสุนัขขึ้น ไม่เกิน 11 ดอลลาร์,ง่าย,ESCI,11.0,no
+b02,budget,iphone 10 xr otterbox case for women under $25,เคส otterbox iphone xr สำหรับผู้หญิง ไม่เกิน 25 ดอลลาร์,ง่าย,ESCI,25.0,no
+b03,budget,white rear fiew mirror under $8,กระจกมองหลังสีขาว ไม่เกิน 8 ดอลลาร์,ยาก,ESCI,8.0,no
+b04,budget,led light strip under $12,ไฟเส้น led ไม่เกิน 12 ดอลลาร์,ง่าย,WANDS,12.0,no
+b05,budget,rose pots garden under $20,กระถางปลูกกุหลาบ ไม่เกิน 20 ดอลลาร์,ยาก,ESCI,20.0,no
+b06,budget,9 ft baby gate with door under $12,ที่กั้นเด็ก 9 ฟุต มีประตู ไม่เกิน 12 ดอลลาร์,ยาก,ESCI,12.0,no
+b07,budget,front porch furniture sets under $160,ชุดเฟอร์นิเจอร์ระเบียงหน้าบ้าน ไม่เกิน 160 ดอลลาร์,กลาง,WANDS,160.0,no
+b08,budget,'moment case' for iphone 7 not the plus under $13,เคส moment สำหรับ iphone 7 ไม่เอารุ่น plus ไม่เกิน 13 ดอลลาร์,ยาก,ESCI,13.0,no
+b09,budget,garmin dash cam mini under $12,กล้องติดรถ garmin mini ไม่เกิน 12 ดอลลาร์,กลาง,ESCI,12.0,no
+b10,budget,dremel attachments for dog nails under $9,หัวต่อ dremel กรอเล็บสุนัข ไม่เกิน 9 ดอลลาร์,ยาก,ESCI,9.0,no
+b11,budget,builder gel in a bottle under $15,เจลต่อเล็บแบบขวด ไม่เกิน 15 ดอลลาร์,ยาก,ESCI,15.0,no
+b12,budget,baby proofing cabinet lock bows under $6,ตัวล็อกตู้กันเด็กเปิด ไม่เกิน 6 ดอลลาร์,ง่าย,ESCI,5.5,no
+b13,budget,1 1/2 pop up drain without overflow under $13,สะดืออ่าง 1 1/2 นิ้ว แบบไม่มีรูน้ำล้น ไม่เกิน 13 ดอลลาร์,กลาง,ESCI,13.0,no
+b14,budget,accent leather chair under $140,เก้าอี้หนังแต่งห้อง ไม่เกิน 140 ดอลลาร์,กลาง,WANDS,140.0,no
+b15,budget,expo wipes for white board under $12,ผ้าเช็ดกระดานไวท์บอร์ด expo ไม่เกิน 12 ดอลลาร์,ง่าย,ESCI,12.0,no
+b16,budget,aline skirt under $17,กระโปรงทรงเอ ไม่เกิน 17 ดอลลาร์,ยาก,ESCI,17.0,no
+b17,budget,decorative vinyl window decal under $7,สติกเกอร์ไวนิลติดกระจกแบบตกแต่ง ไม่เกิน 7 ดอลลาร์,ง่าย,ESCI,7.0,no
+b18,budget,iron beads ideas design under $14,ลูกปัดรีดลายต่าง ๆ ไม่เกิน 14 ดอลลาร์,กลาง,ESCI,14.0,no
+b19,budget,tv stand with storage space under $148,ชั้นวางทีวีมีที่เก็บของ ไม่เกิน 148 ดอลลาร์,ง่าย,ESCI,148.0,no
+b20,budget,5 blade electric razors for men under $20,เครื่องโกนหนวดไฟฟ้า 5 ใบมีด สำหรับผู้ชาย ไม่เกิน 20 ดอลลาร์,ง่าย,ESCI,20.0,no
+b21,budget,adidas dad hat under $20,หมวกแก๊ป adidas ไม่เกิน 20 ดอลลาร์,ง่าย,ESCI,20.0,no
+b22,budget,portable cologne sprayer under $12,ขวดสเปรย์น้ำหอมพกพา ไม่เกิน 12 ดอลลาร์,กลาง,ESCI,12.0,no
+b23,budget,bed risers under $70,ขาเสริมยกเตียง ไม่เกิน 70 ดอลลาร์,ยาก,WANDS,70.0,no
+b24,budget,battery terminals toyota under $18,ขั้วแบตเตอรี่ toyota ไม่เกิน 18 ดอลลาร์,กลาง,ESCI,18.0,no
+b25,budget,# 2 pencils not sharpened under $7,ดินสอ #2 แบบยังไม่เหลา ไม่เกิน 7 ดอลลาร์,กลาง,ESCI,7.0,no
+b26,budget,reflective cat harness under $10,สายรัดอกแมวสะท้อนแสง ไม่เกิน 10 ดอลลาร์,กลาง,ESCI,10.0,no
+b27,budget,squeaky balls for large dogs under $12,ลูกบอลมีเสียงสำหรับสุนัขพันธุ์ใหญ่ ไม่เกิน 12 ดอลลาร์,ง่าย,ESCI,12.0,no
+b28,budget,toilet paper stand under $13,ที่วางกระดาษชำระแบบตั้งพื้น ไม่เกิน 13 ดอลลาร์,ง่าย,WANDS,13.0,no
+b29,budget,usb flash drive 2 tb under $27,แฟลชไดรฟ์ usb 2 tb ไม่เกิน 27 ดอลลาร์,ง่าย,ESCI,27.0,no
+b30,budget,gowdy height adjustable standing desk under $160,โต๊ะยืนปรับระดับ gowdy ไม่เกิน 160 ดอลลาร์,ง่าย,WANDS,160.0,no

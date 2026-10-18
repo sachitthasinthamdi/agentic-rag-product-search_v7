@@ -1,0 +1,28 @@
+﻿qid,product_title,label,note
+q30,"5Pcs Thickened Magic Cleaning Cloth, Magic Fiber Microfiber Cleaning Cloth",2,ผ้าไมโครไฟเบอร์เช็ดทำความสะอาด ใช้แทนผ้าเช็ดกระจกได้ แต่ไม่ได้ระบุว่าสำหรับกระจก/ขัดเงา
+q30,"10PCS Thickened Magic Cleaning Cloth, Cicarfer Magic Cleaning Cloth",2,เหตุผลเดียวกับชิ้นบน
+q47,"BANTI 44""x24"" Standing Desk, Electric Stand up Height Adjustable Home Office Desk",2,เป็นโต๊ะจริง แต่ไม่ใช่แบรนด์ balt — ใช้แทนกันได้ ตรงกับที่เคยให้ GOFLAME ใน q03 = 2
+q47,GOFLAME Height Adjustable Electric Standing Desk,2,ยึดตามที่เคยติดไว้ใน q03 = 2
+b18,Coastal Wooden Bead Garland - Modern Farmhouse Beads,0,พวงลูกปัดไม้แต่งบ้าน เป็นของตกแต่ง ไม่ใช่ลูกปัดสำหรับงานประดิษฐ์ — ผู้วิจัยตัดสินให้ 0 ตามเกณฑ์เดียวกับจานรองจานขอบลูกปัดใน q36
+b18,Mixed Whimsical 3D Cartoon Fairy Tale Story Book Wonderland Glass Mushroom,1,ยึดตามที่เคยติดไว้ใน q36 = 1
+b18,Sukh 7500+Pcs Fuse Beads - Fuse Beads Kit Melty Beads Kit Melting Beads,3,⭐ ลูกปัดรีด = fuse beads ตรงเป๊ะ · ระบบเดิมไม่เคยหาเจอเพราะชั้นแปลแปลเป็น beaded embellishments
+b28,Free Standing White Bathroom Toilet Paper Roll Dispenser Storage Cabinet,3,⭐ ที่วางกระดาษชำระแบบตั้งพื้นตรงเป๊ะ · เทียบกับที่เคยให้แบบติดผนัง/ใต้ตู้ใน b28 = 0
+b28,"Free Standing Toilet Paper Holder Stand with Storage Reserve, Matte Black",3,⭐ ตั้งพื้นตรงเป๊ะ
+b28,"Toilet Paper Holder Stand, Free Standing Toilet Paper Holder Stand",3,⭐ ตั้งพื้นตรงเป๊ะ
+b28,THE IMMUTABLE Stylish and Durable Stainless Steel Paper Towel Holder,0,เป็นที่วางกระดาษแบบติดผนัง ไม่ใช่ตั้งพื้น — ยึดตามที่เคยให้แบบติดผนังใน b28 = 0
+b28,Paper Towel Holder,0,ที่วางกระดาษทิชชู ชื่อสั้นจนยืนยันไม่ได้ว่าตั้งพื้น — ผู้วิจัยตัดสินให้ 0 ให้ตรงกับที่วางกระดาษทิชชูชิ้นอื่นใน b28
+b28,"Paper Towel Holder with Shelf, 2-in-1 Magnetic Shelf, Heavy Duty Rustic",0,ติดด้วยแม่เหล็ก ไม่ใช่ตั้งพื้น
+b10,"Mellbree Dog Nail Grinder Replacement Head, 2-Pack Diamond Tips",3,ยึดตามที่เคยติดไว้ใน q42 = 3
+b10,"LOPSIC Dog Nail Grinder with LED Light, 2-Speed Super Quiet",3,ยึดตามที่เคยติดไว้ใน q42 = 3
+b10,"IS Impact Dog Nail Grinder, Quiet, LED Light, Rechargeable, Professional",3,ยึดตามที่เคยติดไว้ใน q42 = 3
+n46,Genuine leather Lychee print Shoulder Crossbody bag for women casual bucket bag,2,กระเป๋าหนังผู้หญิง ใช้แทนกระเป๋า louis vuitton ได้ ตรงกับที่เคยให้กระเป๋าอื่นใน n46 = 2
+n24,48 Inch Ceramic Vanity Sink Top in Matte Black,1,"หน้าเคาน์เตอร์อ่างล้างหน้า ไม่ใช่ชุดอ่างคู่ — ผู้วิจัยตัดสินให้ 1 ตามเกณฑ์เดียวกับ a8th008 ใน n24 ที่ ""คู่"" คือเหตุผลที่ผู้ใช้ค้น"
+n14,Hawaiian Party Decorations Hawaiian Flower Tropical Birds Garland,0,ไม่ใช่สินค้าลายนกยูง
+n14,Guinea Pig Ornament Personalized Photo Cute Animal Memorial Ceramic Ornament,0,หนูตะเภา ไม่ใช่นกยูง
+b28,"Paper Towel Holders, Paper Towels Rolls - for Kitchen",0,ที่วางกระดาษทิชชูครัว ชื่อไม่ระบุว่าตั้งพื้น ยืนยันไม่ได้ — ผู้วิจัยตัดสินให้ 0 ให้ตรงกับที่วางกระดาษทิชชูชิ้นอื่นใน b28
+b28,"13 Inch Paper Tower Holder Wall Mount, Self Adhesive",0,ระบุชัดว่าติดผนัง ไม่ใช่ตั้งพื้น — ยึดตามที่เคยให้แบบติดผนังใน b28 = 0
+n56,Cute Panda Bear Slippers for Women & Men,2,เป็นรองเท้าใส่ในบ้านจริง แต่ไม่ใช่ผ้าขนหนู (terry) — ใช้แทนกันได้
+q47,"vidaXL Coffee Table, Bowl Shape End Table",1,โต๊ะกลางรับแขก เป็นโต๊ะคนละชนิดกับโต๊ะทำงาน — ผู้วิจัยตัดสินให้ 1 สินค้าชิ้นเดียวกับ a8th017 ในคำค้น q47 เดียวกัน จึงต้องได้ป้ายเท่ากัน
+n46,WOTOW Bike Handlebar Bag Waterproof - Bicycle,0,กระเป๋าติดแฮนด์จักรยาน ไม่ใช่กระเป๋าถือแบรนด์เนม
+n46,COACH Coated Canvas Signature Willow Bucket,2,กระเป๋าถือแบรนด์เนม ใช้แทน louis vuitton ได้ — ตรงกับกระเป๋าอื่นใน n46 = 2
+n24,Vanity Set Dressing Table with Lighted Makeup,1,โต๊ะเครื่องแป้งพร้อมกระจก ไม่ใช่ชุดอ่างล้างหน้าคู่ในห้องน้ำ — เกี่ยวข้องแต่คนละสินค้า

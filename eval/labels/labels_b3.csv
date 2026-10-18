@@ -1,0 +1,16 @@
+﻿ans_id,qid,query,n_products,label,kind,note
+b01,q02,squeaky balls for large dogs,3,2,,ทั้ง 3 ชิ้นบรรยายตรงตามชื่อ การอ้างว่า doesn't mention being squeaky หายไป
+b02,q06,led light strip,3,2,,ทั้ง 3 ชิ้นตรงข้อมูล · adjustable brightness ที่เคยแต่งขึ้นหายไป
+b03,q07,scat mats for dogs,3,2,,บรรยายตรงตามชื่อและรายละเอียด · คำอ้างเท็จว่า matches the user's request หายไป
+b04,q08,toilet paper stand,3,1,extrinsic,ชิ้น 1 เขียน Modern and sleek design with a sturdy base — คำว่า sturdy base เป็นของชิ้น 3 และ Modern/sleek ไม่มีในข้อมูล
+b05,q10,chair pillow cushion,3,2,,ทั้ง 3 ชิ้นตรงข้อมูล · คำอ้างเท็จว่า does not match หายไป
+b06,q18,pool floats,3,2,,ทั้ง 3 ชิ้นตรงข้อมูล · คำอ้างขัดกันเรื่อง shaped like a pool float หายไป
+b07,q19,accent leather chair,3,2,,เนื้อหาตรงข้อมูล · คำว่า armless ที่เคยแต่งขึ้นหายไป · ⚠ แต่ใส่ชื่อสินค้าในเหตุผล ซึ่งพรอมต์ห้าม (ผิดรูปแบบ ไม่ใช่ปัญหาความซื่อตรง)
+b08,q26,lumi baby monitor with camera and audio,3,2,,ทั้ง 3 ชิ้นตรงข้อมูล · does not have a camera กับ does not have a baby monitor feature หายไป
+b09,q29,dji new drone,3,2,,ทั้ง 3 ชิ้นตรงข้อมูล · affordable อ้างจากราคา $29.99 ที่ให้มาได้
+b10,q34,orange track pants men,3,0,extrinsic,⚠ รูปแบบใหม่ — ชื่อสินค้าสั้นมาก โมเดลแต่งคุณสมบัติเอง ชิ้น 1 smooth stretchy woven fabric light but durable · ชิ้น 2 enticing style performance-ready regular fit — ไม่มีอยู่ในข้อมูล
+b11,q35,decorative hour glass gold,3,2,,ทั้ง 3 ชิ้นตรงข้อมูล
+b12,q36,iron beads ideas design,3,2,,ทั้ง 3 ชิ้นตรงข้อมูล · คำอ้างเท็จว่ากำไลสำเร็จรูป matches iron beads หายไป
+b13,q39,aline skirt,3,2,,ทั้ง 3 ชิ้นตรงข้อมูล · ประโยคที่ขัดกันเอง A-line waist แต่ does not match A-line skirt หายไป
+b14,q48,netflix tv show stickers,3,2,,ทั้ง 3 ชิ้นตรงข้อมูล · from The Addams Family ที่เคยเติมหายไป
+b15,q49,play station3,3,0,extrinsic,⚠ รูปแบบใหม่ — ชิ้น 2 เติม brick-breaking and tile-matching action · ชิ้น 3 เติม custom UI full controller support — ไม่มีในข้อมูล · ชิ้น 1 เติม three classic games

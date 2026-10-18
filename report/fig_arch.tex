@@ -1,0 +1,87 @@
+% =============================================================
+% ภาพเปรียบเทียบลำดับการทำงานของทั้งสามสถาปัตยกรรม
+% วาดด้วย TikZ ไม่ต้องใช้โปรแกรมภายนอก
+% =============================================================
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+  every node/.style={transform shape},
+  bx/.style   = {draw=black!55, rounded corners=1.5pt, minimum width=3.75cm,
+                 minimum height=0.56cm, align=center, inner sep=1pt, font=\scriptsize},
+  llm/.style  = {bx, fill=black!68, text=white},
+  code/.style = {bx, fill=black!6},
+  gone/.style = {bx, dashed, draw=black!35, text=black!45, fill=white},
+  dec/.style  = {bx, fill=black!20, very thick, draw=black},
+  hd/.style   = {minimum width=3.75cm, align=center, font=\small\bfseries},
+  sn/.style   = {anchor=east, font=\scriptsize\itshape, text=black!55}
+]
+
+\def\cx{4.0}      % ระยะห่างระหว่างคอลัมน์
+\def\ry{0.72}     % ระยะห่างระหว่างแถว
+
+% ---------- หัวคอลัมน์ ----------
+\node[hd] at (0,0)        {A1};
+\node[hd] at (\cx,0)      {A3C};
+\node[hd] at (2*\cx,0)    {A3};
+\node[font=\scriptsize, text=black!55] at (0,-0.38)     {RAG มาตรฐาน};
+\node[font=\scriptsize, text=black!55] at (\cx,-0.38)   {Agentic RAG};
+\node[font=\scriptsize, text=black!55] at (2*\cx,-0.38) {Agentic RAG};
+
+% ---------- เลขขั้น ----------
+\foreach \i/\y in {1/1,2/2,3/3,4/4,5/5,6/6,7/7,8/8,9/9}
+  \node[sn] at (-2.05,{-0.75-\y*\ry}) {\i};
+
+% ---------- A1 ----------
+\node[llm]  at (0,{-0.75-1*\ry}) {ปรับปรุงโปรไฟล์ผู้ใช้};
+\node[gone] at (0,{-0.75-2*\ry}) {ไม่มี — ค้นทันทีทุกครั้ง};
+\node[code] at (0,{-0.75-3*\ry}) {ประกอบคำค้นจากโปรไฟล์};
+\node[llm]  at (0,{-0.75-4*\ry}) {แปลคำค้นเป็นอังกฤษ};
+\node[code] at (0,{-0.75-5*\ry}) {ค้นในคลัง};
+\node[code] at (0,{-0.75-6*\ry}) {จัดอันดับ + เกณฑ์คัด 0.55};
+\node[gone] at (0,{-0.75-7*\ry}) {ไม่มี — จบรอบเดียว};
+\node[gone] at (0,{-0.75-8*\ry}) {ไม่มี};
+\node[llm]  at (0,{-0.75-9*\ry}) {เขียนคำตอบ};
+
+% ---------- A3C ----------
+\node[llm]  at (\cx,{-0.75-1*\ry}) {ปรับปรุงโปรไฟล์ผู้ใช้};
+\node[dec]  at (\cx,{-0.75-2*\ry}) {LLM เลือก ถาม / คุย / ค้น};
+\node[code] at (\cx,{-0.75-3*\ry}) {ประกอบคำค้นจากโปรไฟล์};
+\node[llm]  at (\cx,{-0.75-4*\ry}) {แปลคำค้นเป็นอังกฤษ};
+\node[code] at (\cx,{-0.75-5*\ry}) {ค้นในคลัง};
+\node[code] at (\cx,{-0.75-6*\ry}) {จัดอันดับ + เกณฑ์คัด 0.55};
+\node[dec]  at (\cx,{-0.75-7*\ry}) {กฎในโปรแกรม: ได้ครบ 3 ไหม};
+\node[llm]  at (\cx,{-0.75-8*\ry}) {LLM เขียนคำค้นใหม่};
+\node[llm]  at (\cx,{-0.75-9*\ry}) {เขียนคำตอบ};
+
+% ---------- A3 ----------
+\node[llm]  at (2*\cx,{-0.75-1*\ry}) {ปรับปรุงโปรไฟล์ผู้ใช้};
+\node[dec]  at (2*\cx,{-0.75-2*\ry}) {LLM เลือก ถาม / คุย / ค้น};
+\node[code] at (2*\cx,{-0.75-3*\ry}) {ประกอบคำค้นจากโปรไฟล์};
+\node[llm]  at (2*\cx,{-0.75-4*\ry}) {แปลคำค้นเป็นอังกฤษ};
+\node[code] at (2*\cx,{-0.75-5*\ry}) {ค้นในคลัง};
+\node[code] at (2*\cx,{-0.75-6*\ry}) {จัดอันดับ + เกณฑ์คัด 0.55};
+\node[dec]  at (2*\cx,{-0.75-7*\ry}) {\textbf{LLM ตัดสินเองว่าจะค้นซ้ำ}};
+\node[llm]  at (2*\cx,{-0.75-8*\ry}) {LLM เขียนคำค้นใหม่};
+\node[llm]  at (2*\cx,{-0.75-9*\ry}) {เขียนคำตอบ};
+
+% ---------- ลูกศรวนกลับ ----------
+\draw[-{Stealth[length=4pt]}, thick, black!70]
+  ($(\cx+1.95,{-0.75-8*\ry})$) -- ++(0.42,0)
+  |- ($(\cx+1.95,{-0.75-5*\ry})$);
+\draw[-{Stealth[length=4pt]}, thick, black!70]
+  ($(2*\cx+1.95,{-0.75-8*\ry})$) -- ++(0.42,0)
+  |- ($(2*\cx+1.95,{-0.75-5*\ry})$);
+\node[font=\tiny, text=black!60, rotate=90] at (\cx+2.62,{-0.75-6.5*\ry})   {ค้นซ้ำ};
+\node[font=\tiny, text=black!60, rotate=90] at (2*\cx+2.62,{-0.75-6.5*\ry}) {ค้นซ้ำ};
+
+% ---------- คำอธิบายสัญลักษณ์ ----------
+\node[llm,  minimum width=1.5cm] (lg1) at (0.5,{-0.75-10.3*\ry})     {เรียก LLM};
+\node[code, minimum width=1.5cm] (lg2) at (2.3,{-0.75-10.3*\ry})     {โปรแกรม};
+\node[dec,  minimum width=2.3cm] (lg3) at (4.5,{-0.75-10.3*\ry})     {ชั้นที่ตัดสินใจ};
+\node[gone, minimum width=1.6cm] (lg4) at (6.6,{-0.75-10.3*\ry})     {ไม่มีขั้นนี้};
+
+\end{tikzpicture}
+\caption{เปรียบเทียบลำดับการทำงาน 9 ขั้นของทั้งสามสถาปัตยกรรม}
+\label{fig:arch}
+\end{figure}

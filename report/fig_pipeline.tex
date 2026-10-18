@@ -1,0 +1,58 @@
+% =============================================================
+% ภาพเส้นทางข้อมูล — สองสายที่มาบรรจบกันที่การวัดผล
+% วาดด้วย TikZ ไม่ต้องใช้โปรแกรมภายนอก
+% =============================================================
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+  bx/.style  = {draw=black!55, rounded corners=2pt, minimum width=2.55cm,
+                minimum height=1.25cm, align=center, inner sep=2pt, font=\scriptsize},
+  dat/.style = {bx, fill=black!6},
+  res/.style = {bx, fill=black!68, text=white},
+  ev/.style  = {bx, fill=black!20, very thick, draw=black, minimum width=5.6cm,
+                minimum height=1.0cm},
+  lb/.style  = {font=\scriptsize\bfseries, anchor=west},
+  ar/.style  = {-{Stealth[length=4pt]}, thick, black!65}
+]
+
+\def\dx{2.95}
+
+% ---------- สายที่ 1 คลังสินค้า ----------
+\node[lb] at (-1.45,1.12) {สายที่ 1 \quad คลังสินค้า};
+\node[dat] (a1) at (0,0)        {ข้อมูลดิบ Amazon\\[1pt]\textbf{117{,}243} แถว\\16 คอลัมน์};
+\node[dat] (a2) at (\dx,0)      {ล้างข้อมูล\\[1pt]\textbf{81{,}264} แถว\\12 คอลัมน์};
+\node[dat] (a3) at (2*\dx,0)    {สกัดคุณลักษณะ\\[1pt]81{,}264 แถว\\\textbf{16} คอลัมน์};
+\node[dat] (a4) at (3*\dx,0)    {ฝังเวกเตอร์\\[1pt]bge-m3\\\textbf{1{,}024} มิติ};
+\node[res] (a5) at (4*\dx,0)    {ดัชนีค้นหา\\[1pt]Chroma\\ค้นได้สองภาษา};
+
+\foreach \i/\j in {a1/a2, a2/a3, a3/a4, a4/a5} \draw[ar] (\i) -- (\j);
+
+% ---------- สายที่ 2 ชุดทดสอบ ----------
+\node[lb] at (-1.45,-1.08) {สายที่ 2 \quad ชุดทดสอบ};
+\node[dat] (b1) at (0,-2.3)     {คำค้นจริงของผู้ใช้\\[1pt]ESCI + WANDS\\\textbf{1{,}980} คำ};
+\node[dat] (b2) at (\dx,-2.3)   {ยิงเข้าคลัง\\[1pt]วัดคะแนน\\อันดับ 1};
+\node[dat] (b3) at (2*\dx,-2.3) {คัดด้วยเกณฑ์ตัวเลข\\[1pt]\textbf{140} คำค้น\\3 กลุ่ม};
+\node[dat] (b4) at (3*\dx,-2.3) {แปลเป็นภาษาไทย\\[1pt]คู่กันบรรทัด\\ต่อบรรทัด};
+\node[res] (b5) at (4*\dx,-2.3) {ติดเฉลยด้วยมือ\\[1pt]เกณฑ์ ESCI\\\textbf{424} คู่};
+
+\foreach \i/\j in {b1/b2, b2/b3, b3/b4, b4/b5} \draw[ar] (\i) -- (\j);
+
+% สายที่ 1 ป้อนให้ขั้นยิงเข้าคลังของสายที่ 2
+\draw[ar, dashed] (a5.south) -- ++(0,-0.52) -| (b2.north);
+
+% ---------- บรรจบที่การวัดผล ----------
+\node[ev] (ev) at (2*\dx,-4.3) {วัดผล 3 สถาปัตยกรรม $\times$ 2 ภาษา $=$ \textbf{840 คำตอบ}};
+\draw[ar] (a5.south) -- ++(0,-3.46) -| (ev.east);
+\draw[ar] (b5.south) |- (ev.east);
+\draw[ar] (b3.south) -- ++(0,-1.0) -- (ev.north);
+
+% ---------- เผยแพร่ ----------
+\node[res, minimum width=3.3cm, minimum height=0.85cm] (hf) at (4*\dx,-4.3)
+      {เผยแพร่บน HuggingFace};
+\draw[ar] (b5.south) -- (hf.north);
+
+\end{tikzpicture}
+\caption{เส้นทางข้อมูลสองสายที่มาบรรจบกันที่ขั้นวัดผล}
+\label{fig:pipeline}
+\end{figure}
